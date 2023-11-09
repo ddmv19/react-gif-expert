@@ -12,14 +12,14 @@ export function GiftExpertApp() {
   return (
     <>
       <h1>GiftExpertApp</h1>
-      <AddCategory 
+      <AddCategory
         onNewCategory={onAddCategory}
       />
       {
         categories.map( (category) => (
           <GifGrid
             key={category}
-            category={category} 
+            category={category}
           />
           )
         )
